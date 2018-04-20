@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule
