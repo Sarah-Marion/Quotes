@@ -2,11 +2,16 @@
   quote works!
 </p> -->
 <div class="jumbotron">
-  <h1>Quotes</h1>
+  <ul>
+    <i class="fa fa-quote-left"></i>
+    <h1>Quotes</h1>
+    <i class="fa fa-quote-right"></i>
+      </ul>
   <hr>
 </div>
 <h3>{{ myQuote.quote }}</h3>
 <small>- {{ myQuote.by }}</small>
+<br>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
@@ -15,10 +20,7 @@
 
     <div class="col-md-6">
       <app-quote-form></app-quote-form>
-      <ul>
-        <i class="fa fa-quote-right"></i>
-        <i class="fa fa-quote-left"></i>
-      </ul>
+     
     </div>
   </div>
 </div>
