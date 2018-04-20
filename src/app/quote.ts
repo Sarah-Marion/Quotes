@@ -1,3 +1,11 @@
 export class Quote {
-    constructor (public id:number, public name:string){}
+    quote:string;
+    author:string;
+    votes: number;
+    
+    constructor(quote: string, author: string, votes: number) {
+        this.quote = quote;
+        this.author = author;
+        this.votes = 0;
+    }
 }

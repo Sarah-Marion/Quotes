@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quote } from '../quote'
 
 @Component({
   selector: 'app-quote',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteComponent implements OnInit {
 
-  constructor() { }
+  quote=[new Quote("My Quote","Sarah",1)]
+  constructor() {
+    // let index = this.quote.indexof(kwot);
+    // this.quote.splice(index,1);
+    // return false;
+  }
 
   ngOnInit() {
   }
