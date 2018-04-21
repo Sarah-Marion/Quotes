@@ -6,20 +6,23 @@
     <i class="fa fa-quote-left"></i>
     <h1>Quotes</h1>
     <i class="fa fa-quote-right"></i>
-      </ul>
+  </ul>
   <hr>
 </div>
-<h3>{{ myQuote.quote }}</h3>
-<small>- {{ myQuote.by }}</small>
+<div *ngFor="let kwot of theQuote">
+  <h3>{{ kwot.quote }}</h3>
+  <h4>- {{ kwot.author }}</h4>
+  <small>{{ kwot.person }}</small>
+</div>
 <br>
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
       <li *ngFor='let kwot of quotes' class="kwot-display">{{ kwot.quote }}</li>
-    </div>
+    </div> -->
 
     <div class="col-md-6">
-      <app-quote-form></app-quote-form>
+      <app-quote-form (sendQuote)="receiveQuote($event)"></app-quote-form>
     </div>
   </div>
 </div>

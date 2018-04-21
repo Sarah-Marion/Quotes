@@ -3,22 +3,21 @@
   <hr>
   <div class="container">
     <div class="row">
-  <form >
-    <div class="form-group">
-      <label for="quote">QUOTE:</label>
-      <textarea name="entry" placeholder="Enter your quote here" class="form-control"></textarea>
+      <form (ngSubmit)='getQuotes(quotesForm)' #quotesForm='ngForm'>
+        <div class="form-group">
+          <label for="quote">QUOTE:</label>
+          <textarea name="quote" placeholder="Enter your quote here" class="form-control" required [(ngModel)]='newQuote.quote' #quote='ngModel'></textarea>
+        </div>
+        <div class="form-group">
+          <label for="author">AUTHOR :</label>
+          <input type="text" name="author" placeholder="Author of quote" class="form-control" [(ngModel)]='newQuote.author' #author='ngModel'>
+        </div>
+        <div class="form-group">
+          <label for="person">PERSON SUBMITTING THIS QUOTE :</label>
+          <input type="text" name="person" placeholder="What is your Name? " class="form-control" [(ngModel)]='newQuote.person' #person='ngModel'>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="author">AUTHOR :</label>
-      <input type="text" placeholder="Author of quote" class="form-control">
-    </div>
-    <div class="form-group">
-        <label for="submit">PERSON SUBMITTING THIS QUOTE :</label>
-        <input type="text" placeholder="What is your Name? " class="form-control">
-      </div>
-      <button type="submit" class="btn btn-success" (click)="saveQuote(quote, author, submit)">Submit</button>
-
-  </form>
-</div>
-</div>
+  </div>
 </div>

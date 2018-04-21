@@ -7,25 +7,29 @@ import { Quote } from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  myQuote : any= {
-    id: 1,
-    quote: String,
-    by: String
-  }
+  // myQuote : any= {
+  //   id: 1,
+  //   quote: String,
+  //   by: String
+  // }
 
-  quote=[new Quote("My Quote","Sarah",1)]
+  theQuote=[new Quote("Remember no one can make you feel inferior without your consent.","Eleanor Roosevelt","Me",0)]
 
 //   deleteQuote(kwot:) {
 //   let index = this.quote.indexOf(kwot);
 //   this.quote.splice(index,1);
 //   return false;
 // }
+receiveQuote(get){
+  this.theQuote.push(get);
+  console.log(this.theQuote);
+}
 
 constructor() { }Quotes
 
   ngOnInit() {
-    this.myQuote.quote = "Remember no one can make you feel inferior without your consent.";
-    this.myQuote.by= "Eleanor Roosevelt";
+    // this.myQuote.quote = "Remember no one can make you feel inferior without your consent.";
+    // this.myQuote.by= "Eleanor Roosevelt";
   }
 
 }
