@@ -14,11 +14,14 @@ export class QuoteComponent implements OnInit {
   }
 
   quote=[new Quote("My Quote","Sarah",1)]
-  constructor() {
-    // let index = this.quote.indexof(kwot);
-    // this.quote.splice(index,1);
-    // return false;
-  }
+
+//   deleteQuote(kwot:) {
+//   let index = this.quote.indexOf(kwot);
+//   this.quote.splice(index,1);
+//   return false;
+// }
+
+constructor() { }Quotes
 
   ngOnInit() {
     this.myQuote.quote = "Remember no one can make you feel inferior without your consent.";
