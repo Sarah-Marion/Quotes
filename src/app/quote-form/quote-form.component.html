@@ -1,5 +1,5 @@
 <div class="form-entry">
-  <h2>Add A Quote</h2>
+  <h2>Input A Quote</h2>
   <hr>
   <!-- <form class="form-group" [formGroup]="quoteForm"> -->
   <form>
@@ -11,6 +11,11 @@
       <label for="author">AUTHOR :</label>
       <input type="text" placeholder="Author of quote" class="form-control">
     </div>
+    <div class="form-group">
+        <label for="submit">PERSON SUBMITTING THIS QUOTE :</label>
+        <input type="text" placeholder="What is your Name? " class="form-control">
+      </div>
+      <button class="btn btn-success" (click)="saveQuote(quote, author, submit)">Submit</button>
 
   </form>
 </div>
