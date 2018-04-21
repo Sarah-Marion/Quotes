@@ -11,12 +11,12 @@ export class QuoteFormComponent implements OnInit {
   @Output() sendQuote = new EventEmitter<any>();
   // quote: string;
   // author: string;
-  newQuote = new Quote("","","",0);
+  newQuote = new Quote("","","");
 
   getQuotes(get){
     var sendingQuote
     // console.log(get.value);
-    sendingQuote = new Quote(get.value.quote,get.value.author,get.value.person,0)
+    sendingQuote = new Quote(get.value.theQuote,get.value.author,get.value.person)
     this.sendQuote.emit(sendingQuote);
     get.reset();//Clears the form after submitting
   }

@@ -1,13 +1,13 @@
 export class Quote {
-    public quote:string;
+    public theQuote:string;
     public author:string;
     public votes: number;
     public person:string;
     
-    constructor(quote: string, author: string, person: string, votes: number) {
-        this.quote = quote;
+    constructor(theQuote, author, person) {
+        this.theQuote = theQuote;
         this.author = author;
         this.person = person;
-        this.votes = votes;
+        this.votes = 0;
     }
 }

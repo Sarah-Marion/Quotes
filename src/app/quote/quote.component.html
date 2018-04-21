@@ -9,11 +9,13 @@
   </ul>
   <hr>
 </div>
-<div *ngFor="let kwot of theQuote; let i = index">
-  <h3 id="{{i}}">{{ kwot.quote }}</h3>
+<div *ngFor="let kwot of theQuotes; let i = index">
+  <h3 id="{{i}}">{{ kwot.theQuote }}</h3>
   <h4 id={{i}}>-{{ kwot.author }}</h4>
   <small id={{i}}>{{ kwot.person }}</small>
-  <app-quote-details (isComplete)='deleteQuote($event,i)'></app-quote-details>
+  <button (click)="adding(i)">Up</button>
+  <button (click)="removing(i)">Down</button>
+  <app-quote-details [quote]='kwot' (isComplete)='deleteQuote($event,i)'></app-quote-details>
 </div>
 <br>
 <div class="container">

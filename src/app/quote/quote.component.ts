@@ -13,17 +13,27 @@ export class QuoteComponent implements OnInit {
   //   by: String
   // }
 
-  theQuote=[new Quote("Remember no one can make you feel inferior without your consent.","Eleanor Roosevelt","Me",0)]
+  theQuotes=[new Quote("Remember no one can make you feel inferior without your consent.","Eleanor Roosevelt","Me")]
 
   deleteQuote(isComplete,index) {
-    this.theQuote.splice(index,1);
-}
-receiveQuote(get){
-  this.theQuote.push(get);
-  console.log(this.theQuote);
-}
+    this.theQuotes.splice(index,1);
+  }
+  receiveQuote(get){
+    this.theQuotes.push(get);
+    console.log(this.theQuotes);
+  }
+  adding(index){
+    this.theQuotes[index].votes = this.theQuotes[index].votes + 1;
+    console.log(this.theQuotes[index].votes);
+  }
+  removing(index){
+    if(this.theQuotes[index].votes > 0){
+      this.theQuotes[index].votes = this.theQuotes[index].votes - 1;
+    } else this.theQuotes[index].votes = 0;
+    console.log(this.theQuotes[index].votes);
+  }
 
-constructor() { }Quotes
+  constructor() { }
 
   ngOnInit() {
     // this.myQuote.quote = "Remember no one can make you feel inferior without your consent.";
