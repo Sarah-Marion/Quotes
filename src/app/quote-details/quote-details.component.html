@@ -1,3 +1,18 @@
-<p>
-  quote-details works!
-</p>
+<!-- <p>{{theQuote.entry}}</p> -->
+<ul>
+  <div *ngFor='let new of quoteEntry;let i =index' >
+    <li id="{{i}}">{{new.newText}}</li>
+<!-- <div class="col-md-6">
+      <li *ngFor='let kwot of quotes' class="kwot-display">{{ kwot.quote }}</li>
+    </div> -->
+  </div>
+</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <app-quote-form (addTextEntry)= 'addTextEntries($event)'></app-quote-form> -->
+      <!-- <app-goal-details *ngIf='goal.showDescription' [goal]='goal' (isComplete)='deleteQuote($event,i)'></app-goal-details> -->
+    </div>
+  </div>
+</div>
+<button class="btn btn-danger" (click)='deleteQuote(true)'>Delete a Quote</button>

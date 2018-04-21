@@ -8,6 +8,6 @@ export class Quote {
         this.quote = quote;
         this.author = author;
         this.person = person;
-        this.votes = 0;
+        this.votes = votes;
     }
 }
