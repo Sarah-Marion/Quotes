@@ -16,6 +16,17 @@
           <label for="person">PERSON SUBMITTING THIS QUOTE :</label>
           <input type="text" name="person" placeholder="What is your Name? " class="form-control" [(ngModel)]='newQuote.person' #person='ngModel'>
         </div>
+
+        <div class="form-group">
+          <label for="timeCreated"><span style="color: darkbrown">Date</span></label>
+          <input type="date" class="form-control" id="timeCreated" [(ngModel)]="newQuote.timeCreated" name="timeCreated" #timeCreated="ngModel" required>
+  
+  
+          <div [hidden]="timeCreated.valid || timeCreated.pristine" class="alert alert-danger">
+            <p>Input Date</p>
+          </div>
+        </div>
+  
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
     </div>
