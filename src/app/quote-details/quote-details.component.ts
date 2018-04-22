@@ -12,12 +12,6 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Output() isComplete = new EventEmitter<boolean>();
 
-  //   deleteQuote(kwot:) {
-  //   let index = this.quote.indexOf(kwot);
-  //   this.quote.splice(index,1);
-  //   return false;
-  // }
-
   deleteQuote(complete:boolean){
     this.isComplete.emit(complete);
   }
