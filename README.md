@@ -30,6 +30,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Technologies Used
 
 * Angular cli
+* Node - for Dependancy Management
 * Bootstrap
 * Custom Css
 
@@ -52,6 +53,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Deployment Server
+
+One needs to run `ng build --prod --base-href="https://GithubUserName.github.io/GithubREPO/"`
 
 ## Known Bugs
 
