@@ -76,17 +76,17 @@
           <h4 id={{i}}>-{{ kwot.author }}</h4>
           <small id={{i}}>{{ kwot.person }}</small>
           <p id="{{i}}">~Submitted {{ kwot.timeCreated | timeCount }} days ago~</p>
-          <button (click)="adding(i)">UpVote</button>
-          <button (click)="removing(i)">DownVote</button>
+          <button><i class="fa fa-thumbs-up" aria-hidden="true"></i><span style="font-size: 1.5em; color: deeppink;"(click)="adding(i)">UpVote</span></button>
+          <button><i class="fa fa-thumbs-down" aria-hidden="true"></i><span style="font-size: 1.5em; color: deepskyblue;"(click)="removing(i)">DownVote</span></button>
           <app-quote-details [quote]='kwot' (isComplete)='deleteQuote($event,i)'></app-quote-details>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid footer">
+<div class="footer">
   <!-- <div class="footer"> -->
-  <div class="row footer-text">
+  <div class="footer-text">
     <ul class="list-inline">
       <li class="list-inline-item">
         <a href="#">
@@ -100,9 +100,9 @@
       </li>
     </ul>
   </div>
-  <div class="row footer-text">
-    <p>&#169; 2018 Created By Sarah Marion</p>
-  </div>
+  <!-- <div class="footer-text"> -->
+  <p>&#169; 2018 Created By Sarah Marion</p>
+  <!-- </div> -->
 </div>
 
 <!-- <div class="row"> -->
