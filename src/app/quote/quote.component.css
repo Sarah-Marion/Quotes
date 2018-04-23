@@ -1,0 +1,16 @@
+.text-uppercase{
+    font-size: 30px; 
+}
+i{
+    margin-bottom: 5px;
+}
+.header{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
