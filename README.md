@@ -7,7 +7,7 @@ By **Sarah Marion**
 ## Description
 
 Here's an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
-<!-- https://sarah-marion.githb.io/ -->
+(https://sarah-marion.github.io/Quotes/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
