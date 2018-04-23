@@ -13,12 +13,13 @@ export class QuoteComponent implements OnInit {
   //   by: String
   // }
 
-  theQuotes=[new Quote("Remember no one can make you feel inferior without your consent.","Eleanor Roosevelt","Me","")]
+  theQuotes=[new Quote("Remember no one can make you feel inferior without your consent.","Eleanor Roosevelt","Me",new Date(2018,4,20))]
 
   deleteQuote(isComplete,index) {
     this.theQuotes.splice(index,1);
   }
   receiveQuote(get){
+    get.timeCreated = new Date (get.timeCreated);
     this.theQuotes.push(get);
     console.log(this.theQuotes);
   }

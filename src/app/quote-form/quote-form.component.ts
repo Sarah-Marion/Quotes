@@ -11,7 +11,7 @@ export class QuoteFormComponent implements OnInit {
   @Output() sendQuote = new EventEmitter<any>();
   // quote: string;
   // author: string;
-  newQuote = new Quote("","","",'');
+  newQuote = new Quote("","","",new Date());
 
   getQuotes(get){
     var sendingQuote
