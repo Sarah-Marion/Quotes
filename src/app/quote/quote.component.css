@@ -3,7 +3,7 @@
     background-size: cover;
     padding-bottom: 3rem;
     padding-top: 2rem;
-    max-height: 100vh;
+    height: 100vh;
     display: grid;
     /* grid-auto-columns: 50% auto; */
 }
@@ -26,13 +26,13 @@ i {
 
 .footer {
   background-color: black;
-  padding: 1em 0em 1em 0em;
+  padding: 1em 0em em 0em;
   text-align: center;
   color: white;
-   /* position: unset;
+  position: relative;
   bottom: 0;
   max-height: 25vh;
-  margin-top: 5rem; */
+  margin-top: 5rem;
 }
 /*  
 .footer p,
@@ -41,8 +41,8 @@ i {
     margin: 0;
 }  */
 
-/* .list-inline-item a {
+.list-inline-item a {
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+} 

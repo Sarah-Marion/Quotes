@@ -13,13 +13,18 @@
   </div>
 
   <div class="container [@quote]='theQuote' ">
+    <!-- <div class="row">
+    <div class="col-md-6">
+      <li *ngFor='let kwot of quotes' class="kwot-display">{{ kwot.quote }}</li>
+    </div>
+  </div> -->
     <div class="row">
       <div class="col-md-6">
         <app-quote-form (sendQuote)="receiveQuote($event)"></app-quote-form>
       </div>
       <div class="col-md-6">
         <div *ngFor="let kwot of theQuotes; let i = index">
-          <h3 id="{{i}}"appHighlight *ngIf="kwot.votes === count && kwot.votes>0"> {{ kwot.theQuote }}</h3>
+          <h3 id="{{i}}"appHighlight *ngIf="kwot.votes === count && kwot.votes>0"> {{ kwot.theQuote }} </h3>
           <h4 id={{i}}>-{{ kwot.author }}</h4>
           <small id={{i}}>{{ kwot.person }}</small>
           <p id="{{i}}">~Submitted {{ kwot.timeCreated | timeCount }} ago~</p>
@@ -32,7 +37,6 @@
   </div>
 </div>
 
-<div class="container">
   <div class="footer">
     <!-- <div class="footer"> -->
       <div class="footer-text">
@@ -53,12 +57,3 @@
         <p>&#169; 2018 Created By Sarah Marion</p>
       <!-- </div> -->
   </div>
-</div>
-
-<!-- <div class="row"> -->
-<!-- <div class="col-md-6">
-      <li *ngFor='let kwot of quotes' class="kwot-display">{{ kwot.quote }}</li>
-    </div> -->
-
-
-<!-- <app-goal-details *ngIf='goal.showDescription' [goal]='goal' (isComplete)='deleteQuote($event,i)'></app-goal-details> -->
