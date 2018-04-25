@@ -1,24 +1,32 @@
 .content {
-    background-image: url("try.gif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("assets/background.jpg");
     background-size: cover;
-    padding-bottom: 3rem;
-    padding-top: 2rem;
-    height: 100vh;
+    /* background-position: center; */
+    padding-bottom: 23rem;
+    padding-top: 21rem;
     display: grid;
     /* grid-auto-columns: 50% auto; */
+    color: white;
 }
-
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
 .col {
     padding: -4em 1.3em;
 }
 .text-uppercase {
   font-size: 30px;
 }
-
+.col-md-6{
+  padding-bottom: 5rem
+}
 i {
   margin-bottom: 5px;
 }
-
+p{
+  margin: 0;
+}
 .header {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -30,10 +38,10 @@ i {
   padding: 1em 0em em 0em;
   text-align: center;
   color: white;
-  position: relative;
-  bottom: 0;
+  /* position: relative; */
+  /* bottom: 0; */
   max-height: 25vh;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 /*  
 .footer p,
@@ -47,3 +55,11 @@ i {
     align-items: center;
     justify-content: center;
 } 
+
+.form-quote{
+  padding-top: 3rem;
+}
+.col-md-12{
+  padding-left: 0;
+  padding-right: 0;
+}
